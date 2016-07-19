@@ -1,0 +1,16 @@
+body,td,th {font-family: Verdana, Arial, Helvetica, sans-serif;font-size: 12px;color: #1d1007; line-height:24px}
+
+#alert-message {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 5px;
+    z-index: 100px;
+}
+#inner-message {
+    margin: 5 auto;
+}
+
+.tab-pane {
+    padding: 10px;
+}

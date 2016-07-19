@@ -1,0 +1,65 @@
+# coding:utf-8
+LANG = "en_US"
+LANGUAGE = "en"
+
+APK_BUCKET = 'androidpackage'
+IMAGE_BUCKET = 'androidstatics'
+
+# crawler setting
+INTERNAL_TIMEOUT = 60
+DOWNLOAD_TIMEOUT = 60 * 30
+CONCURRENT_NUM = 3
+DOWNLOAD_DELAY = 1
+TASK_INTERVAL = 10
+MAX_URL_PER_INTERVAL = 30
+
+# Web admin config
+HOST = '0.0.0.0'
+PORT = 8808
+
+DEBUG = False
+
+TEMPLATE_ROOT = 'templates'
+STATIC_ROOT = 'static'
+
+# redis
+REDIS_HOST = '192.168.3.3'
+REDIS_PORT = 6382
+REDIS_DB = 1
+REDIS_PASS = 'kf2930$32r320j!$%'
+
+HOT_APP_FROM_APPANNIE = 'hot_app_from_appannie'
+HOT_APP_MANUALLY = 'hot_app_manually'
+
+# mongodb
+MONGO_HOST = '192.168.3.8'
+MONGO_PORT = 27017
+
+MONGO_DB = 'android_appcenter_vs'
+MONGO_CONNECTION_STRING = 'mongodb://android:Brit_pop2014@192.168.3.8:47017/android_appcenter_vs'
+MONGO_CONNECTION_STRING_LITE = mongodb://androidlite:Th6Yg5_i-dTzXc3Fd@192.168.2.8:47017/android_appcenter_lite
+MONGO_REPLICASET = 'android'
+MONGO_USER = 'android'
+MONGO_PASSWORD = 'Brit_pop2014'
+
+# Rabbitmq
+RABBITMQ_HOST = '192.168.3.3'
+RABBITMQ_PORT = 5672
+
+RABBITMQ_DBSYNC_BROKER_USER = "android"
+RABBITMQ_DBSYNC_BROKER_PASSWORD = "appvvcom123"
+RABBITMQ_DBSYNC_BROKER_VHOST = "/dbsync"
+RABBITMQ_DBSYNC_BACKEND_VHOST = "/sync_result"
+
+RABBITMQ_GETAPK_BROKER_USER = "purchase"
+RABBITMQ_GETAPK_BROKER_PASSWORD = "1qa2ws3ed"
+RABBITMQ_GETAPK_BROKER_VHOST = "/purchase"
+RABBITMQ_GETAPK_BACKEND_VHOST = "/purchase"
+
+RABBITMQ_DELETE_BROKER_USER = "deleter"
+RABBITMQ_DELETE_BROKER_PASSWORD = "1qa2ws3ed"
+RABBITMQ_DELETE_BROKER_VHOST = "/delete_app"
+RABBITMQ_DELETE_BACKEND_VHOST = "/delete_app"
+
+RABBITMQ_UPLOAD_BROKER_VHOST = "/upload"
+RABBITMQ_UPLOAD_BACKEND_VHOST = "/upload"
